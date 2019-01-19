@@ -1,0 +1,64 @@
+html{
+	height:100%;
+}
+
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+header{
+	background-color: #47d8b7;
+	padding: 12px 20px;
+	height: 50px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	line-height: 80%;
+}
+
+#content{
+	padding-top:20px;
+}
+
+legend{
+	color: #41d85f;
+	font-weight:bold;
+}
+
+#Products{
+	width: 60%;
+}
+
+fieldset{
+	border:2px solid black;
+}
+
+h1{
+	color:#31b243;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+th{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border-right: 1px solid black;
+}
+
+.button{
+	background-color:#47c650;
+	border:1px solid #47c650;
+	border-radius:8px;
+	color:white;
+	padding:15px 32px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:14px;
+	transition-duration: 0.4s;
+}
+
+.button:hover{
+	background-color:white;
+	color:black;
+}

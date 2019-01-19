@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Product form</title>
+		<link rel="stylesheet" type="text/css" href="StyleFile/myStyle.css"> 
+	</head>
+	<body>
+		<header>
+			Shop-Okay<br>
+			<span style="font-size:20px;font-family: Gotham, 'Helvetica Neue', Helvetica">Supermarket</span>
+		</header>
+		<center>
+			<div id="content">
+				<h1>Product Form</h1>
+				<form name="Products" id="Products" action="writeToXML.php" enctype="multipart/form-data" method="post">
+					<fieldset style="text-align:left;margin-left: -100px;">
+						<legend>Enter product details</legend>
+						<table cellpadding="5" style="text-align:center">
+							<tr>
+								<th>Product&nbsp;</th>
+								<th>Category</th>
+								<th>Name</th>
+								<th>Price(R)</th>
+								<th>Quantity</th>
+								<th>Size</th>
+								<th style="border:none">Image</th>
+							</tr>
+							<tr>
+								<td>Product 1</td>
+								<td>
+									<input type="text" name="CategoryOne" id="CategoryOne" required/>
+								</td>
+								<td>
+									<input type="text" name="NameOne" id="NameOne" required/>
+								</td>
+								<td>
+									<input type="number" name="PriceOne" id="PriceOne" min="1" required/>
+								</td>
+								<td>
+									<input type="number" name="QuantityOne" id="QuantityOne" min="1" required/>
+								</td>
+								<td>
+									<select name="SizeOne" id="SizeOne" required>
+										<option value="" disabled selected hidden>Select a size</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+									</select>
+								</td>
+								<td>
+									<input type="file" name="PhotoOne" id="PhotoOne" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>Product 2</td>
+								<td>
+									<input type="text" name="CategoryTwo" id="CategoryTwo" required/>
+								</td>
+								<td>
+									<input type="text" name="NameTwo" id="NameTwo" required/>
+								</td>
+								<td>
+									<input type="number" name="PriceTwo" id="PriceTwo" min="1" required/>
+								</td>
+								<td>
+									<input type="number" name="QuantityTwo" id="QuantityTwo" min="1" required/>
+								</td>
+								<td>
+									<select name="SizeTwo" id="SizeTwo" required>
+										<option value="" disabled selected hidden>Select a size</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+									</select>
+								</td>
+								<td>
+									<input type="file" name="PhotoTwo" id="PhotoTwo" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>Product 3</td>
+								<td>
+									<input type="text" name="CategoryThree" id="CategoryThree" required/>
+								</td>
+								<td>
+									<input type="text" name="NameThree" id="NameThree" required/>
+								</td>
+								<td>
+									<input type="number" name="PriceThree" id="PriceThree" min="1" required/>
+								</td>
+								<td>
+									<input type="number" name="QuantityThree" id="QuantityThree" min="1" required/>
+								</td>
+								<td>
+									<select name="SizeThree" id="SizeThree" required>
+										<option value="" disabled selected hidden>Select a size</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+									</select>
+								</td>
+								<td>
+									<input type="file" name="PhotoThree" id="PhotoThree" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>Product 4</td>
+								<td>
+									<input type="text" name="CategoryFour" id="CategoryFour" required/>
+								</td>
+								<td>
+									<input type="text" name="NameFour" id="NameFour" required/>
+								</td>
+								<td>
+									<input type="number" name="PriceFour" id="PriceFour" min="1" required/>
+								</td>
+								<td>
+									<input type="number" name="QuantityFour" id="QuantityFour" min="1" required/>
+								</td>
+								<td>
+									<select name="SizeFour" id="SizeFour" required>
+										<option value="" disabled selected hidden>Select a size</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+									</select>
+								</td>
+								<td>
+									<input type="file" name="PhotoFour" id="PhotoFour" required/>
+								</td>
+							</tr>
+							<tr>
+								<td>Product 5</td>
+								<td>
+									<input type="text" name="CategoryFive" id="CategoryFive" required/>
+								</td>
+								<td>
+									<input type="text" name="NameFive" id="NameFive" required/>
+								</td>
+								<td>
+									<input type="number" name="PriceFive" id="PriceFive" min="1" required/>
+								</td>
+								<td>
+									<input type="number" name="QuantityFive" id="QuantityFive" min="1" required/>
+								</td>
+								<td>
+									<select name="SizeFive" id="SizeFive" required>
+										<option value="" disabled selected hidden>Select a size</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+									</select>
+								</td>
+								<td>
+									<input type="file" name="PhotoFive" id="PhotoFive" required/>
+								</td>
+							</tr>
+						</table>
+						<table style="float:left">
+							<tr>
+								<td>
+									<input type="submit" class="button" name="Submit" value="Store products"/>
+									<input type="hidden" name="writeXML" value="true"/>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+			</div>
+		</center>
+	</body>
+</html>
